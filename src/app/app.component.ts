@@ -137,7 +137,7 @@ export class AppComponent {
     //this.properMasterSeedAsMnemonic = bip39.entropyToMnemonic(this.properMasterSeedAsHex)
 
     if (this.nano_account_addr_from_pub_child_key) { // Update address and keys and ofther if they were generated before
-      this.generateKeysAndOther()
+      this.generateKeysAndOther(null)
     }
   }
 
@@ -177,8 +177,7 @@ export class AppComponent {
   }
 
   public async generateKeysAndOther(index) {
-    const isNan = isNaN(index);
-    if (isNan) return;
+    if (index === null) return;
     this.derivationPath = this.derivationPathBASE + index;
     console.log(this.derivationPath);
 
@@ -328,7 +327,7 @@ export class AppComponent {
       try {
         //this.properMasterSeedAsMnemonic = bip39.entropyToMnemonic(this.properMasterSeedAsHex);
         this.properMasterSeedAsUint8 = bip32_ed25519.hexToUint8(this.properMasterSeedAsHex);
-        this.generateKeysAndOther();
+        this.generateKeysAndOther(null);
       } catch (err) {
         this.snackBar.open(err.message, null, { duration: 5000 });
         return;
@@ -344,7 +343,7 @@ export class AppComponent {
       try {
         this.properMasterSeedAsHex = bip39.mnemonicToEntropy(this.properMasterSeedAsMnemonic).toUpperCase();
         this.properMasterSeedAsUint8 = bip32_ed25519.hexToUint8(this.properMasterSeedAsHex);
-        this.generateKeysAndOther();
+        this.generateKeysAndOther(null);
       } catch (err) {
         this.snackBar.open(err.message, null, { duration: 5000 });
         return;

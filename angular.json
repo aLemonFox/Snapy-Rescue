@@ -28,9 +28,7 @@
             ],
             "scripts": [
               "src/js/ed25519.js",
-              "src/js/bip32_ed25519.js",
-              "src/js/nano-pow/pow.js",
-              "src/js/nano-pow/startThreads.js"
+              "src/js/bip32_ed25519.js"
             ]
           },
           "configurations": {
@@ -82,9 +80,7 @@
             ],
             "scripts": [
               "src/js/ed25519.js",
-              "src/js/bip32_ed25519.js",
-              "src/js/nano-pow/pow.js",
-              "src/js/nano-pow/startThreads.js"
+              "src/js/bip32_ed25519.js"
             ],
             "assets": [
               "src/js",

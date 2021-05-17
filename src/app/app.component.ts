@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { MatSnackBar } from '@angular/material';
 
 import * as bip32_ed25519 from '../js/bip32_ed25519.js';

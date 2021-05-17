@@ -13,7 +13,7 @@ beta.snapy.io's wallet backup looks something like this:
 Copy the 24 words to your clipboard.
 
 ## Step 2 - Finding funds
-Run this repo locally or go to xxx.github.io and enter your seed phrase. If needed, change the amount of indexes to search.
+Run this repo locally or go to https://github.com/aLemonFox/Snapy-Rescue and enter your seed phrase. If needed, change the amount of indexes to search.
 ![enter seed phrase](https://i.imgur.com/o7flEot.png)
 
 ## Step 3 - Rescue Me

@@ -25,5 +25,5 @@ Click **Rescue Me** to start checking account balances. Accounts with funds will
 When you find an account with funds, copy the private key to your clipboard. Then, visit nault.cc. A popular web-based Nano wallet. On the sidebar, click **settings > configure new wallet**. Then click on **more options**. After that, select **import expanded private key** and paste your private key.
 ![import expanded private key](https://i.imgur.com/5u6Dr6N.png)
 
-## Step 5 - Transfer to you own wallet
+## Step 5 - Transfer to your own wallet
 You have now succesfully recovered your lost Nano's. Make sure to **send everything to a wallet you own**.

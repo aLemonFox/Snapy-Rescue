@@ -136,6 +136,8 @@ export class AppComponent {
       }
 
       if (result.balance != '0') {
+        console.info('BALANCE FOUND!');
+        console.info(JSON.stringify(result));
         this.addressesWithBalance.unshift(result);
       }
       else {
@@ -147,7 +149,6 @@ export class AppComponent {
   public async generateKeysAndOther(index) {
     if (index === null) return;
     this.derivationPath = this.derivationPathBASE + index;
-    console.log(this.derivationPath);
 
     if (this.derivationPath.endsWith("'")) {
       this.snackBar.open('Hardened child public keys can not be derived from a parent public key.', null, { duration: 6000 });
